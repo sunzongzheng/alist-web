@@ -20,6 +20,7 @@ import { isMac } from "~/utils/compatibility"
 export const Header = () => {
   const logos = getSetting("logo").split("\n")
   const logo = useColorModeValue(logos[0], logos.pop())
+  const inApp = navigator.userAgent.includes("AListServer")
 
   const stickyProps = createMemo<CenterProps>(() => {
     switch (local["position_of_header_navbar"]) {
@@ -30,7 +31,7 @@ export const Header = () => {
     }
   })
 
-  return (
+  return inApp ? null : (
     <Center
       {...stickyProps}
       bgColor="$background"
