@@ -49,6 +49,16 @@ export const players: { icon: string; name: string; scheme: string }[] = [
     scheme:
       "intent:$durl#Intent;package=com.mxtech.videoplayer.pro;S.title=$name;end",
   },
+  {
+    icon: "fileball",
+    name: "Fileball",
+    scheme: "filebox://play?url=$edurl",
+  },
+  {
+    icon: "vidhub",
+    name: "VidHub",
+    scheme: "open-vidhub://x-callback-url/open?url=$edurl",
+  },
 ]
 
 export const AutoHeightPlugin = (player: Artplayer) => {
