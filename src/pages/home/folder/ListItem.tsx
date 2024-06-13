@@ -88,6 +88,8 @@ export const ListItem = (props: { obj: StoreObj; index: number }) => {
                 (player) => player.icon === video_player,
               )
               if (playerItem) {
+                ;(e.currentTarget as HTMLElement).style.color =
+                  "rgb(85, 26, 139)"
                 location.href = convertURL(playerItem.scheme, {
                   raw_url: objStore.raw_url,
                   name: objStore.obj.name,
