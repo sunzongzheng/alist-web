@@ -41,6 +41,7 @@ export const initialLocalSettings = [
       "mxplayer-pro",
       "fileball",
       "vidhub",
+      "yybx"
     ],
   },
   {

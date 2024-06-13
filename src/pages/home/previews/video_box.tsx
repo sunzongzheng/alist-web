@@ -59,6 +59,11 @@ export const players: { icon: string; name: string; scheme: string }[] = [
     name: "VidHub",
     scheme: "open-vidhub://x-callback-url/open?url=$edurl",
   },
+  {
+    icon: "yybx",
+    name: "yybx",
+    scheme: "yybx://play?$durl",
+  },
 ]
 
 export const AutoHeightPlugin = (player: Artplayer) => {
