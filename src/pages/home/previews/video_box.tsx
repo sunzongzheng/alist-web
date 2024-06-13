@@ -141,6 +141,7 @@ export const VideoBox = (props: {
                     m="0 auto"
                     boxSize="$8"
                     src={`${window.__dynamic_base__}/images/${item.icon}.webp`}
+                    fallbackSrc={`${window.__dynamic_base__}/images/${item.icon}.png`}
                   />
                 </Anchor>
               </Tooltip>

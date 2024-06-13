@@ -47,6 +47,7 @@ const Preview = () => {
           m="0 auto"
           boxSize="$8"
           src={`${window.__dynamic_base__}/images/${playerItem?.icon}.webp`}
+          fallbackSrc={`${window.__dynamic_base__}/images/${playerItem?.icon}.png`}
           w="auto"
           h="16vh"
         />
